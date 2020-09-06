@@ -1,0 +1,12 @@
+function replaceskin(type) {
+       document.querySelector("#offline-resources-1x").src=type;
+       document.querySelector("#offline-resources-2x").src=type;
+}
+var SkinController = {
+     Colorfull: function red() {
+replaceskin('https://github.com/nonumbershere/Skinz4ChromeDino/blob/master/COLORED/ColoredTrexPack.png?raw=true')
+}
+}
+var menuhack = document.createElement('div');
+menuhack.innerHTML='<button onclick="SkinController.Colorfull();">ColorFull</button><style>button {color: green;} button { background: red;}</style>';
+document.body.prepend(menuhack);
